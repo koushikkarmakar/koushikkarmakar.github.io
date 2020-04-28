@@ -186,6 +186,10 @@ img {
   margin-bottom: 6rem;
 }
 
+.photo-tile {
+    width: 85%;
+}
+
 @media (max-width: 30.625em) {
   .projects-section {
     padding: 6rem 1rem;

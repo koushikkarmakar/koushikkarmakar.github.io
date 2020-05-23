@@ -20,7 +20,7 @@ function getQuotes() {
     headers: {
       Accept: "application/json"
     },
-    url: 'https://raw.githubusercontent.com/koushikkarmakar/koushikkarmakar.github.io/master/data/quotes.json',
+    url: 'https://raw.githubusercontent.com/koushikkarmakar/koushikkarmakar.github.io/master/assets/quotes.json',
     success: function(jsonQuotes) { 
       if (typeof jsonQuotes === 'string') {
         quotesData = JSON.parse(jsonQuotes);

@@ -238,6 +238,9 @@ footer {
   padding: 2rem;
   background: var(--main-gray);
   border-top: 4px solid var(--main-red);
+  position: relative;
+  bottom: 0px;
+    
 }
 
 footer > p {

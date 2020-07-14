@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Koushik Karmakar</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script src="https://use.fontawesome.com/edd951e8d3.js"></script>
+    <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+        	<meta charset="utf-8">
 
-  <style>
-  </style>
-</head>
+        	<title>Welcome</title>
+
+        	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+        	<link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
+        	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        	<link href="css/style.css" rel="stylesheet">
+    </head>
 <body>
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand mx-auto" href="#">Welcome</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.facebook.com/karmakarkoushik" target="_blank">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/koushik-karmakar-aa047044/" target="_blank">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mailto:koushik.dragoon@icloud.com">
-                <i class="fa fa-envelope-open"></i>
-              </a>
-            </li>    
-          </ul>
-        </div>  
-      </nav>
+        <header>
+            <div class="container">
+                <h1 class="logo"><i class="fa fa-code"></i>Koushik</h1>
+                <i class="fa fa-bars toggle-menu"></i>
+                <nav>
+                    <ul>
+                        <li><a href="#" data-scrollto="splash">Home</a></li>
+                        <li><a href="#" data-scrollto="overview">About</a></li>
+                        <li><a href="#" data-scrollto="contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>Hi, I am Koushik</h1>
-  <p><span
+        <section class="splash">
+            <div class="container">
+                <h1>Hi, I am Koushik</h1>
+                <h2><span
     class="txt-rotate"
     data-period="2000"
-    data-rotate='[ "a Software Developer.", "a Photographer.", "a Data Science Enthusiast.", "enjoys video games."]'></span></p>
-</div>
+    data-rotate='[ "a Software Developer.", "a Photographer.", "a Data Science Enthusiast.", "enjoys video games."]'></span></h2>
+                <a class="btn" href="#" data-scrollto="overview">Find out more<i class="fa fa-angle-down"></i></a>
+            </div>
+        </section>
 
-<div class="container" style="margin-top:30px; margin-bottom: 65px;">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>About Me</h2>
-      <!-- <h5>Photo of me:</h5> -->
-      <p>Msc. Data Engineering & Analytics, TU Munich</p>
-    </div>
-    <div class="col-sm-8">
-      <h2>My Github Respsitory</h2>
-      <a class="nav-link" href="https://github.com/koushikkarmakar" target="_blank"><i class="fa fa-github-square"></i> Github</a>
-      <br>
-      <h2>Photography</h2>
-      <a class="nav-link" href="pictures.html" target="_blank"><i class="fa fa-image"></i> Pictures</a>
-      <br>
-      <h2>Projects</h2>
-      <p>Coming Soon!!</p>
-    </div>
-  </div>
-</div>
+        <section class="overview">
+            <div class="container">
+                <div>
+                    <i class="fa fa-github"></i>
+                    <h2><a class="nav-link" href="https://github.com/koushikkarmakar" target="_blank">Github</a></h2>
+                    <p>My Github Repository.</p>
+                </div>
+                <div>
+                    <i class="fa fa-image"></i>
+                    <h2><a class="nav-link" href="pictures.html" target="_blank">Pictures</a></h2>
+                    <p>I like taking pictures.</p>
+                </div>
+                <div>
+                    <i class="fa fa-laptop"></i>
+                    <h2>Projects</h2>
+                    <p>Coming Soon.</p>
+                </div>
+            </div>
+        </section>
 
-<footer class="jumbotron text-center" style="margin-bottom: 0px;">
-  <p>Copyright © Koushik Karmakar, 2020</p>
-</footer>
+        <footer>
+            <div class="container">
+                <div class="copyright">
+                    <p>2020, Koushik Karmakar</p>
+                </div>
+                <div class="social">
+                    Contact:
+                    <a href="https://www.facebook.com/karmakarkoushik" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/koushik-karmakar-aa047044/"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+
+
 </body>
 <script src="js/script.js"></script>
 </html>

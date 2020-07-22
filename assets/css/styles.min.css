@@ -2,19 +2,20 @@
 .article-list {
 color : #313437; 
 background-color : #fff; 
+margin-bottom: 40px;
 } 
 .article-list p {
 color : #7d8285; 
 } 
 .article-list h2 {
 font-weight : 700; 
-margin-bottom : 20px; 
+margin-bottom : 30px; 
 padding-top : 150px; 
 color : inherit; 
 } 
 @media (max-width: 767px) {
 .article-list h2 {
-margin-bottom : 25px; 
+margin-bottom : 30px; 
 padding-top : 25px; 
 font-size : 24px; 
 } 

@@ -214,6 +214,8 @@ img {
   opacity: 1;
 }
 
+
+
 /* Animations */
 
 @keyframes pulse {
@@ -387,33 +389,7 @@ header .toggle-menu{
     overflow: hidden;
     position: relative;
 }
-.splash:after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: -40px; right: -40px; bottom: -40px; left: -40px;
-    background: rgba(255,255,255,0.08);
-    transform: rotate(30deg);
-    animation: spin 60s infinite linear;
-}
-.splash:before{
-    content: "";
-    display: block;
-    position: absolute;
-    top: -40px; right: -40px; bottom: -40px; left: -40px;
-    background: rgba(255,255,255,0.08);
-    transform: rotate(150deg);
-    animation: spin2 50s infinite linear;
-}
-.splash .container{
-    position: relative;
-    top: 48%;
-    transform: translateY(-50%);
-    z-index: 5;
-}
-.splash h2{
-    margin-bottom: 40px;
-}
+
 
 
 footer{

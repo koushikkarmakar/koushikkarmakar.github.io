@@ -19,6 +19,10 @@
 
 /* Resets, Clears & Defaults */
 
+html {
+  scroll-behavior: smooth;
+}
+
 *, *:after, *:before {
     box-sizing: border-box;
 }
@@ -221,7 +225,61 @@ header .toggle-menu{
     margin-bottom: 0;
 }
 
-.feature.greybg{
+.overview a{
+    text-decoration: none;
+    background: rgba(255,255,255,0.1);
+}
+
+footer{
+    background: #222;
+    color: #ccc;
+    padding: 0 20px;
+}
+footer .copyright{
+    float: left;
+    padding: 15px 0;
+}
+footer .copyright p{
+    margin: 0;
+}
+footer .copyright a{
+    color: #fff;
+}
+footer .social{
+    float: right;
+    padding: 15px 0;
+}
+footer .social a{
+    margin-left: 10px;
+    font-size: 20px;
+    color: #ccc;
+}
+footer .social a:hover{
+    color: #fff;
+}
+
+@media (max-width: 800px){
+    section{
+        padding: 80px 10px;
+    }
+    header, footer{
+        padding: 0 10px;
+    }
+    .splash{
+        height: auto;
+        padding: 150px 10px 80px 10px;
+        text-align: center;
+    }
+    .splash .container{
+        position: relative;
+        top: 0;
+        transform: none;
+    }
+    .overview > div > div{
+        padding: 0 20px;
+    }
+
+    .feature.greybg{
     background: #f6f6f6;
 }
 .feature{
@@ -230,10 +288,8 @@ header .toggle-menu{
 }
 .feature img{
     position: absolute;
-    top: -20px;
-    width: 30%;
-    height: auto;
-    right: 55%;
+    top: 50px;
+    right: 100%;
 }
 .feature:nth-of-type(even) img{
     right: auto;
@@ -288,192 +344,6 @@ header .toggle-menu{
     overflow: hidden;
 }
 
-.cta{
-    background: #fbc93d;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
-.cta:after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: -40px; right: -40px; bottom: -40px; left: -40px;
-    background: rgba(255,255,255,0.1);
-    transform: rotate(30deg);
-}
-.cta .container{
-    position: relative;
-    z-index: 10;
-}
-.cta h2{
-    margin-bottom: 40px;
-}
-
-.contact{
-    background: #fbc93d;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
-.contact:after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: -40px; right: -40px; bottom: -40px; left: -40px;
-    background: rgba(255,255,255,0.1);
-    transform: rotate(30deg);
-}
-.contact .input{
-    width: 47%;
-    float: left;
-}
-.contact .input:nth-of-type(odd){
-    margin-right: 6%;
-}
-.contact .message{
-    display: block;
-    clear: both;
-    float: none;
-    padding-top: 10px;
-}
-.contact .input input{
-    display: block;
-    width: 100%;
-    background: rgba(255,255,255,0.3);
-    border: 0;
-    padding: 10px 15px;
-}
-.contact .message textarea{
-    display: block;
-    width: 100%;
-    height: 200px;
-    background: rgba(255,255,255,0.3);
-    border: 0;
-    padding: 10px 15px;
-    resize: vertical;
-}
-.contact label{
-    position: relative;
-    z-index: 10;
-}
-.contact label span{
-    display: block;
-    text-align: left;
-    font-size: 14px;
-}
-.contact label span .fa{
-    margin-right: 7px;
-}
-.contact .submit{
-    display: block;
-    text-align: center;
-    padding-top: 40px;
-}
-.contact h2{
-    margin-bottom: 40px;
-}
-
-.pricing{
-    text-align: center;
-}
-.pricing > div > div{
-    float: left;
-    width: 33%;
-    margin-top: 60px;
-    background: #f6f6f6;
-    padding: 40px;
-}
-.pricing > div > div h3{
-    background: #555;
-    color: #fff;
-    display: block;
-    margin: -40px -40px 35px -40px;
-    padding: 30px;
-    position: relative;
-}
-.pricing > div > div h3 span{
-    display: block;
-}
-.pricing > div > div h3 span .fa{
-    margin: 0 1px;
-}
-.pricing > div > div .price{
-    font-size: 40px;
-}
-.pricing > div > div:nth-of-type(2){
-    width: calc(34% + 20px);
-    margin: 40px -10px 0 -10px;
-    box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.3);
-    position: relative;
-    z-index: 50;
-}
-.pricing > div > div:nth-of-type(2) h3{
-    background: #fbc93d;
-    color: #555;
-    display: block;
-}
-.pricing ul{
-    padding: 0;
-    margin: 27px 0;
-}
-.pricing ul li{
-    display: block;
-    line-height: 40px;
-    border-bottom: 1px solid #eee;
-}
-.pricing ul li:last-child{
-    border-bottom: 0;
-}
-
-footer{
-    background: #222;
-    color: #ccc;
-    padding: 0 20px;
-}
-footer .copyright{
-    float: left;
-    padding: 15px 0;
-}
-footer .copyright p{
-    margin: 0;
-}
-footer .copyright a{
-    color: #fff;
-}
-footer .social{
-    float: right;
-    padding: 15px 0;
-}
-footer .social a{
-    margin-left: 10px;
-    font-size: 20px;
-    color: #ccc;
-}
-footer .social a:hover{
-    color: #fff;
-}
-
-@media (max-width: 800px){
-    section{
-        padding: 80px 10px;
-    }
-    header, footer{
-        padding: 0 10px;
-    }
-    .splash{
-        height: auto;
-        padding: 150px 10px 80px 10px;
-        text-align: center;
-    }
-    .splash .container{
-        position: relative;
-        top: 0;
-        transform: none;
-    }
-    .overview > div > div{
-        padding: 0 20px;
-    }
     .feature img{
         right: 65%;
     }
